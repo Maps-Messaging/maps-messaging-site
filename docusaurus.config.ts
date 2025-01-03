@@ -100,7 +100,7 @@ const config: Config = {
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/mapsmessaging,
+              href: 'https://stackoverflow.com/questions/tagged/mapsmessaging',
             },
             {
               label: 'Discord',
