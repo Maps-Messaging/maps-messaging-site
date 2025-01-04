@@ -12,84 +12,204 @@ const sidebars: SidebarsConfig = {
       label: 'Getting Started',
       collapsed: false,
       items: [
-        'getting-started/quick-start',
-        'getting-started/installation',
-        'getting-started/docker-setup',
-        'getting-started/configuration',
+        {
+          type: 'doc',
+          id: 'getting-started/quick-start',
+          label: 'Quick Start',
+        },
+        {
+          type: 'doc',
+          id: 'getting-started/installation',
+          label: 'Installation',
+        },
+        {
+          type: 'doc',
+          id: 'getting-started/docker-setup',
+          label: 'Docker Setup',
+        },
+        {
+          type: 'doc',
+          id: 'getting-started/configuration',
+          label: 'Configuration',
+        },
       ],
     },
     {
       type: 'category',
       label: 'Core Concepts',
       items: [
-        'core-concepts/architecture',
-        'core-concepts/protocols',
-        'core-concepts/message-routing',
+        {
+          type: 'doc',
+          id: 'core-concepts/architecture',
+          label: 'Architecture',
+        },
+        {
+          type: 'doc',
+          id: 'core-concepts/protocols',
+          label: 'Protocols',
+        },
+        {
+          type: 'doc',
+          id: 'core-concepts/message-routing',
+          label: 'Message Routing',
+        },
       ],
     },
     {
       type: 'category',
       label: 'Features',
       items: [
-        'features/multi-transport',
-        'features/hardware-integration',
-        'features/routing-engine',
-        'features/ml-integration',
-        'features/security',
+        {
+          type: 'doc',
+          id: 'features/multi-transport',
+          label: 'Multi-Transport',
+        },
+        {
+          type: 'doc',
+          id: 'features/hardware-integration',
+          label: 'Hardware Integration',
+        },
+        {
+          type: 'doc',
+          id: 'features/routing-engine',
+          label: 'Routing Engine',
+        },
+        {
+          type: 'doc',
+          id: 'features/ml-integration',
+          label: 'ML Integration',
+        },
+        {
+          type: 'doc',
+          id: 'features/security',
+          label: 'Security',
+        },
       ],
     },
     {
       type: 'category',
       label: 'Protocol Support',
       items: [
-        'protocols/mqtt',
-        'protocols/mqtt-sn',
-        'protocols/amqp',
+        {
+          type: 'doc',
+          id: 'protocols/mqtt',
+          label: 'MQTT',
+        },
+        {
+          type: 'doc',
+          id: 'protocols/mqtt-sn',
+          label: 'MQTT-SN',
+        },
+        {
+          type: 'doc',
+          id: 'protocols/amqp',
+          label: 'AMQP',
+        },
       ],
     },
     {
       type: 'category',
       label: 'API Reference',
       items: [
-        'api-reference/overview',
-        'api-reference/api-docs',
+        {
+          type: 'doc',
+          id: 'api-reference/overview',
+          label: 'Overview',
+        },
+        {
+          type: 'doc',
+          id: 'api-reference/api-docs',
+          label: 'API Documentation',
+        },
       ],
     },
     {
       type: 'category',
       label: 'Deployment',
       items: [
-        'deployment/requirements',
-        'deployment/scaling',
-        'deployment/monitoring',
+        {
+          type: 'doc',
+          id: 'deployment/requirements',
+          label: 'Requirements',
+        },
+        {
+          type: 'doc',
+          id: 'deployment/scaling',
+          label: 'Scaling',
+        },
+        {
+          type: 'doc',
+          id: 'deployment/monitoring',
+          label: 'Monitoring',
+        },
       ],
     },
     {
       type: 'category',
       label: 'Security',
       items: [
-        'security/ssl-configuration',
-        'security/authentication',
-        'security/authorization',
-        'security/certifications',
+        {
+          type: 'doc',
+          id: 'security/ssl-configuration',
+          label: 'SSL Configuration',
+        },
+        {
+          type: 'doc',
+          id: 'security/authentication',
+          label: 'Authentication',
+        },
+        {
+          type: 'doc',
+          id: 'security/authorization',
+          label: 'Authorization',
+        },
+        {
+          type: 'doc',
+          id: 'security/certifications',
+          label: 'Certifications',
+        },
       ],
     },
     {
       type: 'category',
       label: 'Advanced Topics',
       items: [
-        'advanced/performance-tuning',
-        'advanced/clustering',
-        'advanced/disaster-recovery',
+        {
+          type: 'doc',
+          id: 'advanced/performance-tuning',
+          label: 'Performance Tuning',
+        },
+        {
+          type: 'doc',
+          id: 'advanced/clustering',
+          label: 'Clustering',
+        },
+        {
+          type: 'doc',
+          id: 'advanced/disaster-recovery',
+          label: 'Disaster Recovery',
+        },
       ],
     },
     {
       type: 'category',
       label: 'Troubleshooting',
       items: [
-        'troubleshooting/common-issues',
-        'troubleshooting/debugging',
-        'troubleshooting/faq',
+        {
+          type: 'doc',
+          id: 'troubleshooting/common-issues',
+          label: 'Common Issues',
+        },
+        {
+          type: 'doc',
+          id: 'troubleshooting/debugging',
+          label: 'Debugging',
+        },
+        {
+          type: 'doc',
+          id: 'troubleshooting/faq',
+          label: 'FAQ',
+        },
       ],
     },
   ],
