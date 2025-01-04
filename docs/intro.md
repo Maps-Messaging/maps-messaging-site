@@ -2,46 +2,24 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction to MAPS Messaging
 
-Let's discover **Docusaurus in less than 5 minutes**.
+MAPS Messaging is a protocol-agnostic, AI-driven messaging solution designed for IoT devices. It provides robust messaging capabilities across multiple transport protocols, making it ideal for sectors like Energy/Smart Grid, Healthcare, Space/Defense, and Smart Cities.
+
+## Key Features
+
+- **Multi-Transport Support**: Seamlessly handle MQTT, MQTT-SN, AMQP, and more
+- **Direct Hardware Integration**: Connect directly with IoT devices
+- **Advanced Routing Engine**: Sophisticated message routing and filtering
+- **ML Integration**: In-transit ETL and data redirection capabilities
+- **Enterprise-Grade Security**: Support for SSL configurations, SASL, and more
+
+## System Requirements
+
+- JDK 13 or higher
+- Docker support for containerized deployment
+- Minimal client-side hardware requirements
 
 ## Getting Started
 
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Follow our [Quick Start Guide](getting-started/quick-start) to begin using MAPS Messaging in your IoT infrastructure.

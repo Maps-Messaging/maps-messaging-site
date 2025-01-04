@@ -31,11 +31,13 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-          'https://github.com/Maps-Messaging/maps-messaging-site/tree/main/packages/create-docusaurus/templates/shared/',
+          sidebarPath: require.resolve('./sidebars.ts'),
+          // Remove or update editUrl if needed
+          editUrl: 'https://github.com/Maps-Messaging/maps-messaging-site/tree/main/',
+          routeBasePath: 'docs',
+          // Make docs the default landing page (optional)
+          // docLayoutComponent: "@theme/DocPage",
+          // docItemComponent: "@theme/DocItem",
         },
         blog: {
           showReadingTime: true,
@@ -70,10 +72,10 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          type: 'doc',
+          docId: 'intro',  // This should match your intro.md file id
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentation',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -126,7 +128,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} MAPS Messaging BV, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} MAPS Messaging BV. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
@@ -136,3 +138,6 @@ const config: Config = {
 };
 
 export default config;
+
+
+
