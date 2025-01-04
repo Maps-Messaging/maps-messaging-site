@@ -62,6 +62,11 @@ const config: Config = {
   ],
 
   themeConfig: {
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
@@ -69,6 +74,7 @@ const config: Config = {
       logo: {
         alt: 'MAPS Messaging Logo',
         src: 'img/logo.svg',
+        srcDark: 'img/logo-dark.svg', // If you have a dark mode logo
       },
       items: [
         {
@@ -86,7 +92,7 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
           title: 'Docs',
@@ -138,6 +144,5 @@ const config: Config = {
 };
 
 export default config;
-
 
 
