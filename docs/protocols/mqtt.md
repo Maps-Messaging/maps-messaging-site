@@ -170,3 +170,15 @@ client.loop_forever()
 - Review message size limits
 
 
+### Debug Logging
+- Enable debug logging for detailed troubleshooting:
+```yaml
+logging:
+  level:
+    io.mapsmessaging: DEBUG
+```
+
+### Additional Resources
+- [MQTT Specification](https://mqtt.org/mqtt-specification/)
+- [MAPS Messaging GitHub](https://github.com/Maps-Messaging)
+- [Support Forums](https://github.com/Maps-Messaging/mapsmessaging/discussions)
