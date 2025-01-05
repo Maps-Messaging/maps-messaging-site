@@ -36,6 +36,12 @@
 .navbar .navbar__items .button {
   color: white;
   border-color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0.5rem 1rem;
+  line-height: 1.2;
 }
 
 .navbar .navbar__items .button:hover {
@@ -47,6 +53,12 @@
 .footer .button {
   color: white;
   border-color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0.5rem 1rem;
+  line-height: 1.2;
 }
 
 .footer .button:hover {
