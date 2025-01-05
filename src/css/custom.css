@@ -60,7 +60,7 @@
 /* Dark mode specific hover color */
 [data-theme='dark'] .hero--primary .button.button--outline:hover {
   background: #1f62b2 !important;
-  color: white !important;
+  color: white !important;      
   border-color: white !important;
 }
 
@@ -71,6 +71,24 @@
 
 [data-theme='dark'] .navbar {
   background: linear-gradient(90deg, rgba(34, 109, 198, 0.7) 0%, rgba(6, 52, 114, 0.98) 100%);
+}
+
+/* CTA section button styles to match hero section */
+.cta .button.button--outline {
+  color: white !important;
+  border-color: white !important;
+}
+
+.cta .button.button--outline:hover {
+  background: #226DC6 !important;
+  color: white !important;
+  border-color: white !important;
+}
+
+[data-theme='dark'] .cta .button.button--outline:hover {
+  background: #1f62b2 !important;
+  color: white !important;
+  border-color: white !important;
 }
 
 /* Existing styles for code blocks */
@@ -88,4 +106,13 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
   border-left: 3px solid #00ff0080;
+}
+
+/* Custom button hover colors */
+.button.button--secondary:hover {
+  color: #063472 !important;
+}
+
+[data-theme='dark'] .button.button--secondary:hover {
+  color: #063472 !important;
 }
