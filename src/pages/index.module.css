@@ -60,13 +60,15 @@
   margin-top: 2rem;
 }
 
-/* Target the specific button classes */
-:global(.button.button--outline) {
+/* Specific button styles */
+.buttons a.button--outline,
+.ctaButtons a.button--outline {
   color: white !important;
   border-color: white !important;
 }
 
-:global(.button.button--outline:hover) {
+.buttons a.button--outline:hover,
+.ctaButtons a.button--outline:hover {
   color: #226DC6 !important;
   background: white !important;
   border-color: white !important;
@@ -171,7 +173,8 @@
   box-shadow: 0 0 20px rgba(34, 109, 198, 0.1);
 }
 
-[data-theme='dark'] :global(.button.button--outline:hover) {
+[data-theme='dark'] .buttons a.button--outline:hover,
+[data-theme='dark'] .ctaButtons a.button--outline:hover {
   color: #226DC6 !important;
   background: white !important;
 }

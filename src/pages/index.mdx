@@ -8,8 +8,6 @@ import styles from './index.module.css';
 
 
 
-
-
 <div className="hero hero--primary">
   <div className="container">
     <div className={styles.heroContent}>
@@ -19,11 +17,11 @@ import styles from './index.module.css';
           A high-performance, protocol-agnostic messaging solution for IoT and enterprise applications
         </p>
        <div className={styles.buttons}>
-  <a className="button button--outline button--lg" href="/docs/intro">
+  <a className={`\${styles.button} button button--outline button--lg`} href="/docs/intro">
     Get Started ⚡️
   </a>
   <a 
-    className="button button--outline button--lg"
+    className={`\${styles.button} button button--outline button--lg`}
     href="https://github.com/Maps-Messaging/maps_messaging"
     target="_blank"
     rel="noopener noreferrer"
