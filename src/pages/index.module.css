@@ -60,27 +60,16 @@
   margin-top: 2rem;
 }
 
-.buttons a {
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 200px;
-  text-align: center;
-  min-height: 50px;
-  padding: 0.8rem 2rem;
-  line-height: 1.2;
-  vertical-align: middle;
-  font-weight: 600;
+/* Override Docusaurus button styles */
+.buttons :global(.button--outline) {
   color: white;
   border-color: white;
 }
 
-.buttons a:hover {
-  background: white;
+.buttons :global(.button--outline:hover) {
   color: #226DC6;
+  background: white;
   border-color: white;
-  text-decoration: none;
 }
 
 .highlights {
@@ -161,27 +150,16 @@
   margin-top: 2rem;
 }
 
-.ctaButtons a {
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 200px;
-  text-align: center;
-  min-height: 50px;
-  padding: 0.8rem 2rem;
-  line-height: 1.2;
-  vertical-align: middle;
-  font-weight: 600;
+/* Override Docusaurus button styles for CTA section */
+.ctaButtons :global(.button--outline) {
   color: white;
   border-color: white;
 }
 
-.ctaButtons a:hover {
-  background: white;
+.ctaButtons :global(.button--outline:hover) {
   color: #226DC6;
+  background: white;
   border-color: white;
-  text-decoration: none;
 }
 
 [data-theme='dark'] .heroImage {
@@ -204,10 +182,10 @@
   box-shadow: 0 0 20px rgba(34, 109, 198, 0.1);
 }
 
-[data-theme='dark'] .buttons a:hover,
-[data-theme='dark'] .ctaButtons a:hover {
-  background: white;
+[data-theme='dark'] .buttons :global(.button--outline:hover),
+[data-theme='dark'] .ctaButtons :global(.button--outline:hover) {
   color: #226DC6;
+  background: white;
 }
 
 @media screen and (max-width: 996px) {
