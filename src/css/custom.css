@@ -42,11 +42,14 @@
   min-height: 40px;
   padding: 0.5rem 1rem;
   line-height: 1.2;
+  transition: all 0.3s ease;
 }
 
 .navbar .navbar__items .button:hover {
-  background: white;
-  color: var(--ifm-color-primary);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 /* Fix footer button styles */
@@ -59,16 +62,25 @@
   min-height: 40px;
   padding: 0.5rem 1rem;
   line-height: 1.2;
+  transition: all 0.3s ease;
 }
 
 .footer .button:hover {
-  background: white;
-  color: var(--ifm-color-primary);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
-[data-theme='dark'] .navbar .navbar__items .button:hover,
+[data-theme='dark'] .navbar .navbar__items .button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
 [data-theme='dark'] .footer .button:hover {
-  color: var(--ifm-color-primary);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 /* Existing styles for code blocks */
