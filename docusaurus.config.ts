@@ -64,6 +64,30 @@ const config: Config = {
   ],
 
   themeConfig: {
+    headTags: [
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'preconnect',
+          href: 'https://fonts.googleapis.com',
+        },
+      },
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'preconnect',
+          href: 'https://fonts.gstatic.com',
+          crossorigin: 'anonymous',
+        },
+      },
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap',
+        },
+      },
+    ],
     metadata: [
       // Light theme favicons
       {
@@ -168,6 +192,7 @@ const config: Config = {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: 'MAPS Messaging',
+      style: 'primary',
       logo: {
         alt: 'MAPS Messaging Logo',
         src: 'img/favicon/favicon-96x96.png',
@@ -242,5 +267,6 @@ const config: Config = {
 };
 
 export default config;
+
 
 
