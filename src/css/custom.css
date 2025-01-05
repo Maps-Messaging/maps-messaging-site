@@ -32,9 +32,26 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* Common button styles for both navbar and footer */
-.navbar__items a.button,
-.navbar__items a.navbar__item.button,
+/* Header button styles */
+header.heroBanner nav.navbar .navbar__items a.button.button--secondary {
+  color: white;
+  border-color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0.5rem 1rem;
+  line-height: 1.2;
+  transition: all 0.3s ease;
+}
+
+header.heroBanner nav.navbar .navbar__items a.button.button--secondary:hover {
+  background: white;
+  color: #226DC6;
+  border-color: white;
+}
+
+/* Footer button styles */
 .footer .button {
   color: white;
   border-color: white;
@@ -47,19 +64,17 @@
   transition: all 0.3s ease;
 }
 
-.navbar__items a.button:hover,
-.navbar__items a.navbar__item.button:hover,
 .footer .button:hover {
   background: white;
-  color: var(--ifm-color-primary);
+  color: #063472;
+  border-color: white;
 }
 
 /* Dark theme adjustments */
-[data-theme='dark'] .navbar__items a.button:hover,
-[data-theme='dark'] .navbar__items a.navbar__item.button:hover,
+[data-theme='dark'] header.heroBanner nav.navbar .navbar__items a.button.button--secondary:hover,
 [data-theme='dark'] .footer .button:hover {
   background: white;
-  color: var(--ifm-color-primary);
+  color: #226DC6;
 }
 
 /* Existing styles for code blocks */
