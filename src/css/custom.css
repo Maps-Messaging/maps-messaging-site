@@ -1,6 +1,10 @@
-/* Import Montserrat font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
 
+/* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #063472;
   --ifm-color-primary-dark: #052f67;
@@ -9,11 +13,14 @@
   --ifm-color-primary-light: #07397d;
   --ifm-color-primary-lighter: #073c83;
   --ifm-color-primary-lightest: #084494;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --maps-light-blue: #226DC6;
   --ifm-font-family-base: 'Montserrat', system-ui, -apple-system, sans-serif;
   --ifm-heading-font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
 }
 
+/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #226DC6;
   --ifm-color-primary-dark: #1f62b2;
@@ -22,85 +29,49 @@
   --ifm-color-primary-light: #2578da;
   --ifm-color-primary-lighter: #307edd;
   --ifm-color-primary-lightest: #4f92e1;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-
-/* Additional custom styles */
-.navbar__brand {
-  font-weight: 600;
+/* Fix navbar button styles */
+.navbar .navbar__items .button {
+  color: white;
+  border-color: white;
 }
 
-.navbar__link {
-  font-weight: 500;
-}
-
-.navbar__title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-}
-
-.hero__title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+.navbar .navbar__items .button:hover {
+  background: white;
   color: var(--ifm-color-primary);
 }
 
-.hero__subtitle {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  color: var(--ifm-color-secondary);
+/* Fix footer button styles */
+.footer .button {
+  color: white;
+  border-color: white;
 }
 
-.footer {
-  --ifm-footer-background-color: var(--ifm-background-surface-color);
-  font-family: 'Montserrat', sans-serif;
+.footer .button:hover {
+  background: white;
+  color: var(--ifm-color-primary);
 }
 
-/* Custom styles for code blocks */
-.code-block {
-  background-color: var(--ifm-background-surface-color);
-  border-radius: var(--ifm-global-radius);
-  box-shadow: var(--ifm-global-shadow-md);
+[data-theme='dark'] .navbar .navbar__items .button:hover,
+[data-theme='dark'] .footer .button:hover {
+  color: var(--ifm-color-primary);
 }
 
-/* Custom styles for cards */
-.card {
-  border: 1px solid var(--ifm-color-emphasis-200);
-  transition: all 0.2s ease;
-  border-radius: var(--ifm-global-radius);
+/* Existing styles for code blocks */
+.code-block-error-line {
+  background-color: #ff000020;
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+  border-left: 3px solid #ff000080;
 }
 
-.card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--ifm-global-shadow-md);
+.code-block-success-line {
+  background-color: #00ff0020;
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+  border-left: 3px solid #00ff0080;
 }
-
-/* Custom styles for buttons */
-.button {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  transition: all 0.2s ease;
-}
-
-.button--primary {
-  background-color: var(--ifm-color-primary);
-  border-color: var(--ifm-color-primary);
-}
-
-.button--secondary {
-  background-color: var(--ifm-color-secondary);
-  border-color: var(--ifm-color-secondary);
-}
-
-/* Custom styles for headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-}
-
-
-
-
-
-
-
