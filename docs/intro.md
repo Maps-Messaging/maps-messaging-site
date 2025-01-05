@@ -11,7 +11,7 @@ MAPS Messaging is a protocol-agnostic, AI-driven messaging solution designed for
 - **Multi-Transport Support**: Seamlessly handle MQTT, MQTT-SN, AMQP, and more
 - **Direct Hardware Integration**: Connect directly with IoT devices
 - **Advanced Routing Engine**: Sophisticated message routing and filtering
-- **ML Integration**: In-transit ETL and data redirection capabilities
+- **ML Integration**: in-transit ETL and data redirection, including K-Means clustering for anomaly detection and TensorFlow model inference capabilities
 - **Enterprise-Grade Security**: Support for SSL configurations, SASL, and more
 
 ## System Requirements
@@ -23,3 +23,5 @@ MAPS Messaging is a protocol-agnostic, AI-driven messaging solution designed for
 ## Getting Started
 
 Follow our [Quick Start Guide](getting-started/quick-start) to begin using MAPS Messaging in your IoT infrastructure.
+
+
