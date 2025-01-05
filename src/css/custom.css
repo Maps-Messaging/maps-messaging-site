@@ -32,7 +32,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* Header button styles */
+/* Fix navbar button styles */
 .navbar__link {
   color: white !important;
   border-color: white;
@@ -50,30 +50,27 @@
   color: #226DC6 !important;
 }
 
-/* Footer button styles */
-.footer .button {
-  color: white;
-  border-color: white;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 40px;
-  padding: 0.5rem 1rem;
-  line-height: 1.2;
-  transition: all 0.3s ease;
+/* Fix hero section button hover */
+.hero--primary .button.button--outline:hover {
+  background: #226DC6 !important;
+  color: white !important;
+  border-color: white !important;
 }
 
-.footer .button:hover {
-  background: white;
-  color: #063472;
-  border-color: white;
+/* Dark mode specific hover color */
+[data-theme='dark'] .hero--primary .button.button--outline:hover {
+  background: #1f62b2 !important;
+  color: white !important;
+  border-color: white !important;
 }
 
-/* Dark theme adjustments */
-[data-theme='dark'] .navbar__link:hover,
-[data-theme='dark'] .footer .button:hover {
-  background: white;
-  color: #226DC6 !important;
+/* Header background fixes */
+.navbar {
+  background-color: rgba(6, 52, 114, 0.98);
+}
+
+[data-theme='dark'] .navbar {
+  background-color: rgba(34, 109, 198, 0.98);
 }
 
 /* Existing styles for code blocks */
@@ -92,17 +89,3 @@
   padding: 0 var(--ifm-pre-padding);
   border-left: 3px solid #00ff0080;
 }
-/* Fix hero section button hover */
-.hero--primary .button.button--outline:hover {
-  background: #226DC6 !important;
-  color: white !important;
-  border-color: white !important;
-}
-
-/* Dark mode specific hover color */
-[data-theme='dark'] .hero--primary .button.button--outline:hover {
-  background: #063472 !important;
-  color: white !important;
-  border-color: white !important;
-}
-
