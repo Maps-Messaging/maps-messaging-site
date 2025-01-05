@@ -7,6 +7,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'MAPS Messaging',
   tagline: 'Protocol-agnostic, AI-driven messaging solution for IoT',
+  favicon: 'img/favicon/favicon.ico',
+
     // Set the production url of your site here
   url: 'https://www.mapsmessaging.io', // Update with your actual domain
   baseUrl: '/',
@@ -62,6 +64,101 @@ const config: Config = {
   ],
 
   themeConfig: {
+    metadata: [
+      // Light theme favicons
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: '/img/favicon/favicon.ico',
+          media: '(prefers-color-scheme: light)'
+        }
+      },
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'icon',
+          type: 'image/png',
+          sizes: '32x32',
+          href: '/img/favicon/favicon-32x32.png',
+          media: '(prefers-color-scheme: light)'
+        }
+      },
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'icon',
+          type: 'image/png',
+          sizes: '16x16',
+          href: '/img/favicon/favicon-16x16.png',
+          media: '(prefers-color-scheme: light)'
+        }
+      },
+      
+      // Dark theme favicons
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: '/img/favicon/dark/favicon.ico',
+          media: '(prefers-color-scheme: dark)'
+        }
+      },
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'icon',
+          type: 'image/png',
+          sizes: '32x32',
+          href: '/img/favicon/dark/favicon-32x32.png',
+          media: '(prefers-color-scheme: dark)'
+        }
+      },
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'icon',
+          type: 'image/png',
+          sizes: '16x16',
+          href: '/img/favicon/dark/favicon-16x16.png',
+          media: '(prefers-color-scheme: dark)'
+        }
+      },
+      
+      // Apple Touch Icon (light/dark)
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'apple-touch-icon',
+          sizes: '180x180',
+          href: '/img/favicon/apple-touch-icon.png',
+          media: '(prefers-color-scheme: light)'
+        }
+      },
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'apple-touch-icon',
+          sizes: '180x180',
+          href: '/img/favicon/dark/apple-touch-icon.png',
+          media: '(prefers-color-scheme: dark)'
+        }
+      },
+      
+      // PWA manifest
+      {tagName: 'link', attributes: {rel: 'manifest', href: '/img/favicon/site.webmanifest'}},
+      
+      // Theme colors
+      {tagName: 'meta', attributes: {name: 'theme-color', content: '#063472', media: '(prefers-color-scheme: light)'}},
+      {tagName: 'meta', attributes: {name: 'theme-color', content: '#ffffff', media: '(prefers-color-scheme: dark)'}},
+      
+      // Microsoft Tile
+      {tagName: 'meta', attributes: {name: 'msapplication-TileColor', content: '#063472'}},
+      {tagName: 'meta', attributes: {name: 'msapplication-TileImage', href: '/img/favicon/mstile-150x150.png', media: '(prefers-color-scheme: light)'}},
+      {tagName: 'meta', attributes: {name: 'msapplication-TileImage', href: '/img/favicon/dark/mstile-150x150.png', media: '(prefers-color-scheme: dark)'}}
+    ],
     colorMode: {
       defaultMode: 'light',
       disableSwitch: false,
@@ -73,8 +170,9 @@ const config: Config = {
       title: 'MAPS Messaging',
       logo: {
         alt: 'MAPS Messaging Logo',
-        src: 'img/logo.svg',
-        srcDark: 'img/logo-dark.svg', // If you have a dark mode logo
+        src: 'img/favicon/favicon-96x96.png',
+        srcDark: 'img/favicon/dark/favicon-96x96.png',  // Updated path to match our generated structure
+        
       },
       items: [
         {
