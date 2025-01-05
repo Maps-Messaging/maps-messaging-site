@@ -4,24 +4,38 @@ sidebar_position: 1
 
 # Introduction to MAPS Messaging
 
-MAPS Messaging is a protocol-agnostic, AI-driven messaging solution designed for IoT devices. It provides robust messaging capabilities across multiple transport protocols, making it ideal for sectors like Energy/Smart Grid, Healthcare, Space/Defense, and Smart Cities.
+Welcome to MAPS Messaging - a protocol-agnostic, AI-driven messaging solution designed for IoT devices and enterprise applications.
+
+## What is MAPS Messaging?
+
+MAPS Messaging is a sophisticated messaging platform that combines:
+- Multi-protocol support
+- AI/ML integration capabilities
+- Advanced routing and filtering
+- Enterprise-grade security
+- Direct hardware integration
 
 ## Key Features
 
-- **Multi-Transport Support**: Seamlessly handle MQTT, MQTT-SN, AMQP, and more
-- **Direct Hardware Integration**: Connect directly with IoT devices
-- **Advanced Routing Engine**: Sophisticated message routing and filtering
-- **ML Integration**: in-transit ETL and data redirection, including K-Means clustering for anomaly detection and TensorFlow model inference capabilities
-- **Enterprise-Grade Security**: Support for SSL configurations, SASL, and more
+### Protocol Agnostic
+- Support for MQTT, MQTT-SN, AMQP
+- Custom protocol adaptation capability
+- Seamless protocol translation
 
-## System Requirements
+### AI Integration
+- In-transit ETL processing
+- ML-based data routing
+- K-Means clustering for anomaly detection
+- TensorFlow model inference
 
-- JDK 13 or higher
-- Docker support for containerized deployment
-- Minimal client-side hardware requirements
+### Enterprise Security
+- SSL/TLS encryption
+- SASL authentication
+- Planned certifications: SOC2, ISO 27001, FIPS
 
 ## Getting Started
 
-Follow our [Quick Start Guide](getting-started/quick-start) to begin using MAPS Messaging in your IoT infrastructure.
-
-
+Choose your path to get started with MAPS Messaging:
+- [Quick Start Guide](/getting-started)
+- [Installation](/installation)
+- [Documentation](/docs/guides)

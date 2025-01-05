@@ -1,20 +1,25 @@
-# Installation
+---
+sidebar_position: 1
+---
+
+# Installation Guide
 
 ## Prerequisites
+
+Before installing MAPS Messaging, ensure you have:
 - JDK 13 or higher
-- Docker environment
-- Minimum system requirements: Server-side operation only
+- Docker environment (for containerized deployment)
+- Minimum system requirements met
 
-## Basic Setup
-1. Pull the Docker image
-2. Configure SSL settings
-3. Set up UUID generation
-4. Configure SASL support if needed
-5. Set up dynamic storage
-6. Configure device integration parameters
+## Quick Start with Docker
 
-## Advanced Configuration
-- Schema management
-- Task scheduling
-- Logging configuration
-- JMS selector parsing
+```bash
+# Pull the latest Docker image
+docker pull mapsmessaging/maps-messaging
+
+# Run the container
+docker run -d \
+  -p 1883:1883 \
+  -p 8883:8883 \
+  --name maps-messaging \
+  mapsmessaging/maps-messaging
