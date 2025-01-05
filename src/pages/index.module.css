@@ -75,24 +75,12 @@
   font-weight: 600;
 }
 
-.buttons a.button--secondary {
-  background: #226DC6;
-  color: white;
-  border-color: #226DC6;
-}
-
-.buttons a.button--secondary:hover {
-  background: #063472;
-  border-color: #063472;
-  color: white;
-}
-
-.buttons a.button--outline {
+.buttons a {
   color: white;
   border-color: white;
 }
 
-.buttons a.button--outline:hover {
+.buttons a:hover {
   background: white;
   color: #063472;
 }
@@ -175,24 +163,12 @@
   margin-top: 2rem;
 }
 
-.ctaButtons a.button--primary {
-  background: #226DC6;
-  color: white;
-  border-color: #226DC6;
-}
-
-.ctaButtons a.button--primary:hover {
-  background: white;
-  color: #063472;
-  border-color: white;
-}
-
-.ctaButtons a.button--outline {
+.ctaButtons a {
   color: white;
   border-color: white;
 }
 
-.ctaButtons a.button--outline:hover {
+.ctaButtons a:hover {
   background: white;
   color: #063472;
 }
@@ -217,15 +193,8 @@
   box-shadow: 0 0 20px rgba(34, 109, 198, 0.1);
 }
 
-[data-theme='dark'] .buttons a.button--secondary,
-[data-theme='dark'] .ctaButtons a.button--primary {
-  background: #226DC6;
-  color: white;
-  border-color: #226DC6;
-}
-
-[data-theme='dark'] .buttons a.button--outline:hover,
-[data-theme='dark'] .ctaButtons a.button--outline:hover {
+[data-theme='dark'] .buttons a:hover,
+[data-theme='dark'] .ctaButtons a:hover {
   color: #226DC6;
 }
 
