@@ -1,67 +1,27 @@
-/* Add at the top of the file */
-.heroText h1,
-.heroText p,
-.highlightItem h3,
-.highlightItem p,
-.feature h3,
-.feature p,
-.cta h2,
-.cta p,
-.buttons a,
-.ctaButtons a {
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* Make headings slightly bolder */
-.heroText h1,
-.highlightItem h3,
-.feature h3,
-.cta h2 {
-    font-weight: 600;
-}
-
-/* Adjust subtitle and paragraph weight */
-.heroText p,
-.highlightItem p,
-.feature p,
-.cta p {
-    font-weight: 400;
-}
-
-/* Button text weight */
-.buttons a,
-.ctaButtons a {
-    font-weight: 500;
-}
-
-
-
-
-/* Adjust hero background to be lighter or add contrast for the logo */
+/* Hero section improvements */
 .heroContent {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 4rem;
-  padding: 4rem 0; /* Increased padding for better vertical spacing */
-}
-
-.heroText {
-  flex: 1;
-  text-align: left;
+  padding: 4rem 0;
 }
 
 .heroText h1 {
+  font-weight: 700;
   color: white;
   font-size: 3rem;
   margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .heroText p {
+  font-weight: 600;
   color: white;
   opacity: 0.9;
   font-size: 1.2rem;
   line-height: 1.6;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .heroImage {
@@ -69,126 +29,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 300px; /* Slightly smaller to match the text section better */
-  background: rgba(255, 255, 255, 0.95); /* Slightly more opaque */
+  max-width: 300px;
+  background: rgba(255, 255, 255, 0.95);
   padding: 2rem;
   border-radius: var(--ifm-card-border-radius);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.heroImage img {
-  max-width: 100%;
-  height: auto;
-  /* Optional: add drop shadow for better contrast */
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.buttons a.button--outline {
-  color: white;
-  border-color: white;
-}
-
-.buttons a.button--outline:hover {
-  color: var(--ifm-color-primary);
-  background: white;
-}
-
-.highlights {
-  padding: 4rem 0;
-  background: var(--ifm-background-color);
-}
-
-.highlightGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
-}
-
-.highlightItem {
-  padding: 2rem;
-  border-radius: var(--ifm-card-border-radius);
-  background: var(--ifm-background-surface-color);
-  box-shadow: var(--ifm-global-shadow-lw);
-  transition: transform 0.2s ease-in-out;
-}
-
-.highlightItem:hover {
-  transform: translateY(-5px);
-}
-
-.features {
-  padding: 4rem 0;
-  background: var(--ifm-background-surface-color);
-}
-
-.featureGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
-}
-
-.feature {
-  padding: 2rem;
-  border-radius: var(--ifm-card-border-radius);
-  background: var(--ifm-background-color);
-  box-shadow: var(--ifm-global-shadow-lw);
-}
-
-.cta {
-  padding: 4rem 0;
-  text-align: center;
-  background: linear-gradient(145deg, var(--ifm-color-primary-lighter) 0%, var(--ifm-color-primary) 100%);
-  color: white;
-}
-
-.ctaButtons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-@media screen and (max-width: 996px) {
-  .heroContent {
-    flex-direction: column;
-    text-align: center;
-    gap: 2rem;
-  }
-
-  .heroText {
-    text-align: center;
-  }
-
-  .buttons {
-    justify-content: center;
-  }
-
-  .heroImage {
-    order: -1;
-  }
-}
-
-.highlights {
-  padding: 6rem 0; /* More vertical spacing */
-}
-
-.highlightGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 3rem 0;
-}
-
-.highlightItem {
+/* Feature sections improvements */
+.highlightItem, .feature {
   padding: 2rem;
   border-radius: var(--ifm-card-border-radius);
   background: var(--ifm-background-surface-color);
@@ -197,28 +46,98 @@
   border: 1px solid var(--ifm-color-emphasis-200);
 }
 
-.highlightItem:hover {
+.highlightItem:hover, .feature:hover {
   transform: translateY(-5px);
   box-shadow: var(--ifm-global-shadow-md);
   border-color: var(--ifm-color-primary);
 }
 
-.highlightItem h3 {
+.highlightItem h3, .feature h3 {
   color: var(--ifm-color-primary);
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
+/* Button improvements */
+.buttons a,
+.ctaButtons a {
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  min-height: 50px;
+  padding: 0.8rem 2rem;
+  font-weight: 500;
+  text-align: center;
+  border-radius: var(--ifm-button-border-radius);
+}
 
+.buttons a.button--secondary {
+  background: var(--maps-light-blue);
+  color: white;
+  border-color: var(--maps-light-blue);
+}
+
+.buttons a.button--outline {
+  color: white;
+  border-color: white;
+}
+
+.buttons a.button--outline:hover {
+  background: white;
+  color: var(--ifm-color-primary);
+}
+
+/* Dark theme specific improvements */
+[data-theme='dark'] .highlightItem,
+[data-theme='dark'] .feature {
+  background: var(--ifm-card-background-color);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+[data-theme='dark'] .highlightItem:hover,
+[data-theme='dark'] .feature:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 20px rgba(34, 109, 198, 0.1);
+}
+
+[data-theme='dark'] .heroImage {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .heroImage img {
+  filter: brightness(0) invert(1);
+}
+
+[data-theme='dark'] .cta {
+  background: linear-gradient(145deg, 
+    var(--ifm-color-primary) 0%, 
+    var(--ifm-color-primary-darkest) 100%
+  );
+}
+
+/* CTA section improvements */
 .cta {
   padding: 6rem 0;
   text-align: center;
-  background: linear-gradient(145deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-darker) 100%);
+  background: linear-gradient(145deg, var(--ifm-color-primary) 0%, var(--maps-light-blue) 100%);
   color: white;
 }
 
 .cta h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cta p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 800px;
+  margin: 0 auto;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .ctaButtons {
@@ -228,11 +147,7 @@
   margin-top: 3rem;
 }
 
-.ctaButtons a {
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-}
-
+/* Responsive improvements */
 @media screen and (max-width: 996px) {
   .heroContent {
     flex-direction: column;
@@ -248,9 +163,15 @@
     font-size: 2.5rem;
   }
 
-  .buttons {
-    justify-content: center;
-    flex-wrap: wrap;
+  .buttons, .ctaButtons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .buttons a,
+  .ctaButtons a {
+    width: 100%;
+    margin: 0.5rem 0;
   }
 
   .heroImage {
@@ -258,180 +179,12 @@
     margin-bottom: 2rem;
   }
 
-  .highlightGrid, .featureGrid {
-    grid-template-columns: 1fr;
+  .cta h2 {
+    font-size: 2rem;
   }
 
-  .ctaButtons {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 1rem;
-  }
-}
-
-/* Add hover effects to features similar to highlights */
-.feature {
-  padding: 2rem;
-  border-radius: var(--ifm-card-border-radius);
-  background: var(--ifm-background-color);
-  box-shadow: var(--ifm-global-shadow-lw);
-  transition: all 0.3s ease;
-  border: 1px solid var(--ifm-color-emphasis-200);
-}
-
-.feature:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--ifm-global-shadow-md);
-  border-color: var(--ifm-color-primary);
-}
-
-.feature h3 {
-  color: var(--ifm-color-primary);
-  margin-bottom: 1rem;
-}
-
-/* Fix dark theme backgrounds */
-[data-theme='dark'] .heroImage {
-  background: rgba(255, 255, 255, 0.1); /* Darker background for the logo area */
-}
-
-[data-theme='dark'] .highlightItem,
-[data-theme='dark'] .feature {
-  background: var(--ifm-card-background-color);
-  border-color: var(--ifm-color-emphasis-300);
-}
-
-[data-theme='dark'] .highlightItem:hover,
-[data-theme='dark'] .feature:hover {
-  border-color: var(--ifm-color-primary);
-  background: var(--ifm-card-background-color);
-}
-
-[data-theme='dark'] .highlights,
-[data-theme='dark'] .features {
-  background: var(--ifm-background-color);
-}
-
-/* Ensure CTA section has good contrast in dark mode */
-[data-theme='dark'] .cta {
-  background: linear-gradient(145deg, 
-    var(--ifm-color-primary-darker) 0%, 
-    var(--ifm-color-primary-darkest) 100%
-  );
-}
-
-/* Optional: Add a subtle hover glow effect for dark theme */
-[data-theme='dark'] .highlightItem:hover,
-[data-theme='dark'] .feature:hover {
-  box-shadow: 0 0 20px rgba(var(--ifm-color-primary-rgb), 0.1);
-}
-
-/* Button styles */
-.buttons a,
-.ctaButtons a {
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 200px;
-    text-align: center;
-}
-
-.buttons a:hover,
-.ctaButtons a:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Hero section button specifics */
-.buttons {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-.buttons a.button--outline {
-    color: white;
-    border-color: white;
-}
-
-.buttons a.button--outline:hover {
-    color: var(--ifm-color-primary);
-    background: white;
-}
-
-/* CTA section button specifics */
-.ctaButtons {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 3rem;
-}
-
-.ctaButtons a {
-    padding: 1rem 2rem;
+  .cta p {
     font-size: 1.1rem;
+    padding: 0 1rem;
+  }
 }
-
-/* Dark theme button adjustments */
-[data-theme='dark'] .buttons a.button--outline:hover {
-    color: var(--ifm-color-primary-darker);
-}
-
-[data-theme='dark'] .ctaButtons a.button--outline {
-    border-color: white;
-    color: white;
-}
-
-[data-theme='dark'] .ctaButtons a.button--outline:hover {
-    background: white;
-    color: var(--ifm-color-primary-darker);
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 996px) {
-    .buttons,
-    .ctaButtons {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .buttons a,
-    .ctaButtons a {
-        width: 100%;
-        margin: 0.5rem 0;
-    }
-}
-
-/* Update button styles to ensure vertical centering */
-.buttons a,
-.ctaButtons a {
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 200px;
-    text-align: center;
-    min-height: 50px; /* Set consistent height */
-    padding: 0.8rem 2rem; /* Adjust padding */
-    line-height: 1.2; /* Improve line height for multi-line text */
-    vertical-align: middle;
-}
-
-/* Ensure consistent spacing in CTA buttons */
-.ctaButtons a {
-    min-height: 60px; /* Slightly taller for CTA buttons */
-}
-
-/* Maintain mobile responsiveness */
-@media screen and (max-width: 996px) {
-    .buttons a,
-    .ctaButtons a {
-        width: 100%;
-        margin: 0.5rem 0;
-        min-height: 50px; /* Keep consistent height on mobile */
-    }
-}
-
-

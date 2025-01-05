@@ -2,76 +2,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Primary Colors - based on #063472 */
-  --ifm-color-primary: #063472;        /* Main brand color */
+  --ifm-color-primary: #063472;
   --ifm-color-primary-dark: #052f67;
-  --ifm-color-primary-darker: #052b61;
+  --ifm-color-primary-darker: #052c61;
   --ifm-color-primary-darkest: #042450;
   --ifm-color-primary-light: #07397d;
-  --ifm-color-primary-lighter: #073d83;
+  --ifm-color-primary-lighter: #073c83;
   --ifm-color-primary-lightest: #084494;
-
-  /* Secondary Colors - based on #226DC6 */
-  --ifm-color-secondary: #226DC6;
-  --ifm-color-secondary-dark: #1f62b2;
-  --ifm-color-secondary-darker: #1d5ca8;
-  --ifm-color-secondary-darkest: #184c8b;
-  --ifm-color-secondary-light: #2f78d1;
-  --ifm-color-secondary-lighter: #3980d4;
-  --ifm-color-secondary-lightest: #5791da;
-
-  /* Success, Info, Warning, Danger colors - complementing your brand */
-  --ifm-color-success: #2E8B57;
-  --ifm-color-info: #226DC6;
-  --ifm-color-warning: #F5A623;
-  --ifm-color-danger: #D64545;
-
-  /* Background colors */
-  --ifm-background-color: #ffffff;
-  --ifm-background-surface-color: #f8f9fa;
-
-  /* Font settings - Using Montserrat */
-  --ifm-font-family-base: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --ifm-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  --ifm-font-size-base: 16px;
-  --ifm-line-height-base: 1.65;
-
-  /* Heading font settings */
-  --ifm-h1-font-size: 2.5rem;
-  --ifm-h2-font-size: 2rem;
-  --ifm-h3-font-size: 1.5rem;
-  --ifm-h4-font-size: 1.25rem;
-  --ifm-h5-font-size: 1rem;
-  --ifm-h6-font-size: 0.875rem;
-
-  /* Navbar settings */
-  --ifm-navbar-background-color: var(--ifm-background-color);
-  --ifm-navbar-height: 4rem;
-  --ifm-navbar-item-padding-horizontal: 1rem;
-
-  /* Other customizations */
-  --ifm-global-radius: 0.5rem;
-  --ifm-global-shadow-md: 0 2px 8px rgba(6, 52, 114, 0.1);
-
-  /* Code block customization */
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(6, 52, 114, 0.1);
+  --ifm-secondary-color: #226DC6;
+  --maps-light-blue: #226DC6;
+  --ifm-font-family-base: 'Montserrat', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
 }
+
 
 /* Dark mode overrides */
 [data-theme='dark'] {
-  --ifm-color-primary: #226DC6;        /* Using secondary color as primary in dark mode */
+  --ifm-color-primary: #226DC6;
   --ifm-color-primary-dark: #1f62b2;
   --ifm-color-primary-darker: #1d5ca8;
   --ifm-color-primary-darkest: #184c8b;
-  --ifm-color-primary-light: #2f78d1;
-  --ifm-color-primary-lighter: #3980d4;
-  --ifm-color-primary-lightest: #5791da;
-
+  --ifm-color-primary-light: #2578da;
+  --ifm-color-primary-lighter: #307edd;
+  --ifm-color-primary-lightest: #4f92e1;
   --ifm-background-color: #1a1a1a;
-  --ifm-background-surface-color: #242424;
-
-  --docusaurus-highlighted-code-line-bg: rgba(34, 109, 198, 0.1);
+  --ifm-background-surface-color: #242526;
 }
 
 /* Additional custom styles */
@@ -146,3 +101,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 }
+
+
+
+
+
+
+
