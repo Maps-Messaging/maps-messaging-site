@@ -95,6 +95,14 @@
 /* Fix hero section button hover */
 .hero--primary .button.button--outline:hover {
   background: #226DC6 !important;
-  color: white;
-    border-color: rgb(240, 235, 235) !important;
+  color: white !important;
+  border-color: white !important;
 }
+
+/* Dark mode specific hover color */
+[data-theme='dark'] .hero--primary .button.button--outline:hover {
+  background: #063472 !important;
+  color: white !important;
+  border-color: white !important;
+}
+
