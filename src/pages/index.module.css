@@ -60,7 +60,7 @@
   margin-top: 2rem;
 }
 
-.buttons a {
+.button {
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
@@ -72,14 +72,16 @@
   line-height: 1.2;
   vertical-align: middle;
   font-weight: 600;
-  color: white;
-  border-color: white;
+  color: white !important;
+  border: 1px solid white;
+  border-radius: var(--ifm-button-border-radius);
 }
 
-.buttons a:hover {
+.button:hover {
   background: white;
-  color: #226DC6;
+  color: #226DC6 !important;
   border-color: white;
+  text-decoration: none;
 }
 
 .highlights {
@@ -172,14 +174,16 @@
   line-height: 1.2;
   vertical-align: middle;
   font-weight: 600;
-  color: white;
-  border-color: white;
+  color: white !important;
+  border: 1px solid white;
+  border-radius: var(--ifm-button-border-radius);
 }
 
 .ctaButtons a:hover {
   background: white;
-  color: #226DC6;
+  color: #226DC6 !important;
   border-color: white;
+  text-decoration: none;
 }
 
 [data-theme='dark'] .heroImage {
@@ -202,10 +206,10 @@
   box-shadow: 0 0 20px rgba(34, 109, 198, 0.1);
 }
 
-[data-theme='dark'] .buttons a:hover,
+[data-theme='dark'] .button:hover,
 [data-theme='dark'] .ctaButtons a:hover {
   background: white;
-  color: #226DC6;
+  color: #226DC6 !important;
 }
 
 @media screen and (max-width: 996px) {
