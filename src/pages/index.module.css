@@ -60,16 +60,27 @@
   margin-top: 2rem;
 }
 
-/* Target the specific Docusaurus button classes */
-.buttons .button--outline {
-  color: white !important;
-  border-color: white !important;
+.buttons a {
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  text-align: center;
+  min-height: 50px;
+  padding: 0.8rem 2rem;
+  line-height: 1.2;
+  vertical-align: middle;
+  font-weight: 600;
+  color: white;
+  border-color: white;
 }
 
-.buttons .button--outline:hover {
-  background: white !important;
-  color: #226DC6 !important;
-  text-decoration: none !important;
+.buttons a:hover {
+  background: white;
+  color: #226DC6;
+  border-color: white;
+  text-decoration: none;
 }
 
 .highlights {
@@ -150,15 +161,27 @@
   margin-top: 2rem;
 }
 
-.ctaButtons .button--outline {
-  color: white !important;
-  border-color: white !important;
+.ctaButtons a {
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  text-align: center;
+  min-height: 50px;
+  padding: 0.8rem 2rem;
+  line-height: 1.2;
+  vertical-align: middle;
+  font-weight: 600;
+  color: white;
+  border-color: white;
 }
 
-.ctaButtons .button--outline:hover {
-  background: white !important;
-  color: #226DC6 !important;
-  text-decoration: none !important;
+.ctaButtons a:hover {
+  background: white;
+  color: #226DC6;
+  border-color: white;
+  text-decoration: none;
 }
 
 [data-theme='dark'] .heroImage {
@@ -179,6 +202,12 @@
 [data-theme='dark'] .feature:hover {
   border-color: var(--ifm-color-primary);
   box-shadow: 0 0 20px rgba(34, 109, 198, 0.1);
+}
+
+[data-theme='dark'] .buttons a:hover,
+[data-theme='dark'] .ctaButtons a:hover {
+  background: white;
+  color: #226DC6;
 }
 
 @media screen and (max-width: 996px) {
