@@ -92,3 +92,9 @@
   padding: 0 var(--ifm-pre-padding);
   border-left: 3px solid #00ff0080;
 }
+/* Fix hero section button hover */
+.hero--primary .button.button--outline:hover {
+  background: #226DC6 !important;
+  color: white;
+    border-color: rgb(240, 235, 235) !important;
+}
