@@ -9,14 +9,11 @@
   --ifm-color-primary-light: #07397d;
   --ifm-color-primary-lighter: #073c83;
   --ifm-color-primary-lightest: #084494;
-  --ifm-secondary-color: #226DC6;
   --maps-light-blue: #226DC6;
   --ifm-font-family-base: 'Montserrat', system-ui, -apple-system, sans-serif;
   --ifm-heading-font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
 }
 
-
-/* Dark mode overrides */
 [data-theme='dark'] {
   --ifm-color-primary: #226DC6;
   --ifm-color-primary-dark: #1f62b2;
@@ -25,9 +22,8 @@
   --ifm-color-primary-light: #2578da;
   --ifm-color-primary-lighter: #307edd;
   --ifm-color-primary-lightest: #4f92e1;
-  --ifm-background-color: #1a1a1a;
-  --ifm-background-surface-color: #242526;
 }
+
 
 /* Additional custom styles */
 .navbar__brand {
