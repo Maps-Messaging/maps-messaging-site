@@ -36,6 +36,5 @@ MAPS Messaging is a sophisticated messaging platform that combines:
 ## Getting Started
 
 Choose your path to get started with MAPS Messaging:
-- [Quick Start Guide](/getting-started)
-- [Installation](/installation)
-- [Documentation](/docs/guides)
+- [Quick Start Guide](/docs/getting-started/quick-start.md)
+- [Installation](/docs/getting-started/installation.md)
