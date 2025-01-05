@@ -60,7 +60,8 @@
   margin-top: 2rem;
 }
 
-.button {
+.buttons a,
+.ctaButtons a {
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
@@ -72,14 +73,30 @@
   line-height: 1.2;
   vertical-align: middle;
   font-weight: 600;
-  color: white !important;
-  border: 1px solid white;
-  border-radius: var(--ifm-button-border-radius);
+  color: white;
+  border-color: white;
 }
 
-.button:hover {
+.buttons a.button--outline {
+  color: white;
+  border-color: white;
+}
+
+.buttons a.button--outline:hover {
   background: white;
-  color: #226DC6 !important;
+  color: #226DC6;
+  border-color: white;
+  text-decoration: none;
+}
+
+.buttons a.button--secondary {
+  color: white;
+  border-color: white;
+}
+
+.buttons a.button--secondary:hover {
+  background: white;
+  color: #226DC6;
   border-color: white;
   text-decoration: none;
 }
@@ -163,25 +180,13 @@
 }
 
 .ctaButtons a {
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 200px;
-  text-align: center;
-  min-height: 50px;
-  padding: 0.8rem 2rem;
-  line-height: 1.2;
-  vertical-align: middle;
-  font-weight: 600;
-  color: white !important;
-  border: 1px solid white;
-  border-radius: var(--ifm-button-border-radius);
+  color: white;
+  border-color: white;
 }
 
 .ctaButtons a:hover {
   background: white;
-  color: #226DC6 !important;
+  color: #226DC6;
   border-color: white;
   text-decoration: none;
 }
@@ -206,10 +211,10 @@
   box-shadow: 0 0 20px rgba(34, 109, 198, 0.1);
 }
 
-[data-theme='dark'] .button:hover,
+[data-theme='dark'] .buttons a:hover,
 [data-theme='dark'] .ctaButtons a:hover {
   background: white;
-  color: #226DC6 !important;
+  color: #226DC6;
 }
 
 @media screen and (max-width: 996px) {
