@@ -287,5 +287,83 @@
   box-shadow: 0 0 20px rgba(var(--ifm-color-primary-rgb), 0.1);
 }
 
+/* Button styles */
+.buttons a,
+.ctaButtons a {
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    text-align: center;
+}
+
+.buttons a:hover,
+.ctaButtons a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero section button specifics */
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.buttons a.button--outline {
+    color: white;
+    border-color: white;
+}
+
+.buttons a.button--outline:hover {
+    color: var(--ifm-color-primary);
+    background: white;
+}
+
+/* CTA section button specifics */
+.ctaButtons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.ctaButtons a {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+/* Dark theme button adjustments */
+[data-theme='dark'] .buttons a.button--outline:hover {
+    color: var(--ifm-color-primary-darker);
+}
+
+[data-theme='dark'] .ctaButtons a.button--outline {
+    border-color: white;
+    color: white;
+}
+
+[data-theme='dark'] .ctaButtons a.button--outline:hover {
+    background: white;
+    color: var(--ifm-color-primary-darker);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 996px) {
+    .buttons,
+    .ctaButtons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .buttons a,
+    .ctaButtons a {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
+
 
 
