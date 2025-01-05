@@ -1,3 +1,42 @@
+/* Add at the top of the file */
+.heroText h1,
+.heroText p,
+.highlightItem h3,
+.highlightItem p,
+.feature h3,
+.feature p,
+.cta h2,
+.cta p,
+.buttons a,
+.ctaButtons a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Make headings slightly bolder */
+.heroText h1,
+.highlightItem h3,
+.feature h3,
+.cta h2 {
+    font-weight: 600;
+}
+
+/* Adjust subtitle and paragraph weight */
+.heroText p,
+.highlightItem p,
+.feature p,
+.cta p {
+    font-weight: 400;
+}
+
+/* Button text weight */
+.buttons a,
+.ctaButtons a {
+    font-weight: 500;
+}
+
+
+
+
 /* Adjust hero background to be lighter or add contrast for the logo */
 .heroContent {
   display: flex;
