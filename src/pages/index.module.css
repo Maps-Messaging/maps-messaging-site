@@ -404,5 +404,34 @@
     }
 }
 
+/* Update button styles to ensure vertical centering */
+.buttons a,
+.ctaButtons a {
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    text-align: center;
+    min-height: 50px; /* Set consistent height */
+    padding: 0.8rem 2rem; /* Adjust padding */
+    line-height: 1.2; /* Improve line height for multi-line text */
+    vertical-align: middle;
+}
+
+/* Ensure consistent spacing in CTA buttons */
+.ctaButtons a {
+    min-height: 60px; /* Slightly taller for CTA buttons */
+}
+
+/* Maintain mobile responsiveness */
+@media screen and (max-width: 996px) {
+    .buttons a,
+    .ctaButtons a {
+        width: 100%;
+        margin: 0.5rem 0;
+        min-height: 50px; /* Keep consistent height on mobile */
+    }
+}
 
 
