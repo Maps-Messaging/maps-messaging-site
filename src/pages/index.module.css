@@ -60,16 +60,17 @@
   margin-top: 2rem;
 }
 
-/* Override Docusaurus button styles */
-.buttons :global(.button--outline) {
-  color: white;
-  border-color: white;
+/* Target the specific button classes */
+:global(.button.button--outline) {
+  color: white !important;
+  border-color: white !important;
 }
 
-.buttons :global(.button--outline:hover) {
-  color: #226DC6;
-  background: white;
-  border-color: white;
+:global(.button.button--outline:hover) {
+  color: #226DC6 !important;
+  background: white !important;
+  border-color: white !important;
+  text-decoration: none !important;
 }
 
 .highlights {
@@ -150,18 +151,6 @@
   margin-top: 2rem;
 }
 
-/* Override Docusaurus button styles for CTA section */
-.ctaButtons :global(.button--outline) {
-  color: white;
-  border-color: white;
-}
-
-.ctaButtons :global(.button--outline:hover) {
-  color: #226DC6;
-  background: white;
-  border-color: white;
-}
-
 [data-theme='dark'] .heroImage {
   background: rgba(255, 255, 255, 0.1);
 }
@@ -182,10 +171,9 @@
   box-shadow: 0 0 20px rgba(34, 109, 198, 0.1);
 }
 
-[data-theme='dark'] .buttons :global(.button--outline:hover),
-[data-theme='dark'] .ctaButtons :global(.button--outline:hover) {
-  color: #226DC6;
-  background: white;
+[data-theme='dark'] :global(.button.button--outline:hover) {
+  color: #226DC6 !important;
+  background: white !important;
 }
 
 @media screen and (max-width: 996px) {
