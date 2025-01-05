@@ -114,58 +114,59 @@ client.loop_forever()
 
 ## Performance Considerations
 ### Optimizing MQTT Performance
-### Connection Pooling
+- Connection Pooling
 
-## Reuse connections when possible
-### Implement proper connection management
-### Monitor connection health
+- Reuse connections when possible
+- Implement proper connection management
+- Monitor connection health
 ### Message Size
 
-##Default maximum message size: 256MB
-###Configurable per deployment
-###Consider compression for large payloads
-###QoS Selection
+- Default maximum message size: 256MB
+- Configurable per deployment
+- Consider compression for large payloads
+### QoS Selection
 
-##QoS 0 for highest throughput
-##QoS 1 for balanced reliability
-##QoS 2 for critical messages
-##Monitoring
-###Monitor these key metrics for optimal performance:
+- QoS 0 for highest throughput
+- QoS 1 for balanced reliability
+- QoS 2 for critical messages
+  
+## Monitoring
+### Monitor these key metrics for optimal performance:
 
-###Connection count
-###Message throughput
-###Subscription count
-##3Retained message count
-###Queue depth
-###Security Best Practices
-###Authentication
+- Connection count
+- Message throughput
+- Subscription count
+- Retained message count
+- Queue depth
+## Security Best Practices
+### Authentication
 
-###Always enable authentication in production
-###Use strong passwords
-###Implement certificate-based authentication for enhanced security
-##Authorization
+- Always enable authentication in production
+- Use strong passwords
+- Implement certificate-based authentication for enhanced security
+### Authorization
 
-###Implement topic-level access control
-###Use ACLs to restrict access
-###Regular audit of access patterns
-###Encryption
+- Implement topic-level access control
+- Use ACLs to restrict access
+- Regular audit of access patterns
+### Encryption
 
-##Enable SSL/TLS in production
-##Use strong cipher suites
-##Regular certificate rotation
-##Troubleshooting
-##Common Issues
-##Connection Problems
+- Enable SSL/TLS in production
+- Use strong cipher suites
+- Regular certificate rotation
+- Troubleshooting
+- Common Issues
+### Connection Problems
 
-##Verify network connectivity
-##Check port availability
-##Validate credentials
-##Review SSL/TLS configuration
-##Message Delivery Issues
+- Verify network connectivity
+- Check port availability
+- Validate credentials
+- Review SSL/TLS configuration
+### Message Delivery Issues
 
-##Check QoS levels
-##Verify topic permissions
-##Monitor client connectivity
-##Review message size limits
+- Check QoS levels
+- Verify topic permissions
+- Monitor client connectivity
+- Review message size limits
 
 
