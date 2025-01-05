@@ -60,19 +60,16 @@
   margin-top: 2rem;
 }
 
-/* Specific button styles */
-.buttons a.button--outline,
-.ctaButtons a.button--outline {
-  color: white !important;
-  border-color: white !important;
+/* Override the default button styles */
+:global(.hero--primary .button.button--outline) {
+  color: white;
+  border-color: white;
 }
 
-.buttons a.button--outline:hover,
-.ctaButtons a.button--outline:hover {
-  color: #226DC6 !important;
-  background: white !important;
-  border-color: white !important;
-  text-decoration: none !important;
+:global(.hero--primary .button.button--outline:hover) {
+  background: white;
+  color: #226DC6;
+  border-color: white;
 }
 
 .highlights {
@@ -153,6 +150,17 @@
   margin-top: 2rem;
 }
 
+:global(.cta .button.button--outline) {
+  color: white;
+  border-color: white;
+}
+
+:global(.cta .button.button--outline:hover) {
+  background: white;
+  color: #226DC6;
+  border-color: white;
+}
+
 [data-theme='dark'] .heroImage {
   background: rgba(255, 255, 255, 0.1);
 }
@@ -171,12 +179,6 @@
 [data-theme='dark'] .feature:hover {
   border-color: var(--ifm-color-primary);
   box-shadow: 0 0 20px rgba(34, 109, 198, 0.1);
-}
-
-[data-theme='dark'] .buttons a.button--outline:hover,
-[data-theme='dark'] .ctaButtons a.button--outline:hover {
-  color: #226DC6 !important;
-  background: white !important;
 }
 
 @media screen and (max-width: 996px) {
