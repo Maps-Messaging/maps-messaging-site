@@ -32,27 +32,9 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* Fix navbar button styles */
-.navbar .navbar__items .button {
-  color: white;
-  border-color: white;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 40px;
-  padding: 0.5rem 1rem;
-  line-height: 1.2;
-  transition: all 0.3s ease;
-}
-
-.navbar .navbar__items .button:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  border-color: white;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-}
-
-/* Fix footer button styles */
+/* Common button styles for both navbar and footer */
+.navbar__items a.button,
+.navbar__items a.navbar__item.button,
 .footer .button {
   color: white;
   border-color: white;
@@ -65,22 +47,19 @@
   transition: all 0.3s ease;
 }
 
+.navbar__items a.button:hover,
+.navbar__items a.navbar__item.button:hover,
 .footer .button:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  background: white;
+  color: var(--ifm-color-primary);
 }
 
-[data-theme='dark'] .navbar .navbar__items .button:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-}
-
+/* Dark theme adjustments */
+[data-theme='dark'] .navbar__items a.button:hover,
+[data-theme='dark'] .navbar__items a.navbar__item.button:hover,
 [data-theme='dark'] .footer .button:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  background: white;
+  color: var(--ifm-color-primary);
 }
 
 /* Existing styles for code blocks */
