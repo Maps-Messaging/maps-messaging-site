@@ -73,32 +73,18 @@
   line-height: 1.2;
   vertical-align: middle;
   font-weight: 600;
-  color: white;
-  border-color: white;
+  color: white !important;
+  border: 1px solid white;
+  border-radius: var(--ifm-button-border-radius);
+  text-decoration: none !important;
 }
 
-.buttons a.button--outline {
-  color: white;
-  border-color: white;
-}
-
-.buttons a.button--outline:hover {
+.buttons a:hover,
+.ctaButtons a:hover {
   background: white;
-  color: #226DC6;
+  color: #226DC6 !important;
   border-color: white;
-  text-decoration: none;
-}
-
-.buttons a.button--secondary {
-  color: white;
-  border-color: white;
-}
-
-.buttons a.button--secondary:hover {
-  background: white;
-  color: #226DC6;
-  border-color: white;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .highlights {
@@ -179,18 +165,6 @@
   margin-top: 2rem;
 }
 
-.ctaButtons a {
-  color: white;
-  border-color: white;
-}
-
-.ctaButtons a:hover {
-  background: white;
-  color: #226DC6;
-  border-color: white;
-  text-decoration: none;
-}
-
 [data-theme='dark'] .heroImage {
   background: rgba(255, 255, 255, 0.1);
 }
@@ -214,7 +188,7 @@
 [data-theme='dark'] .buttons a:hover,
 [data-theme='dark'] .ctaButtons a:hover {
   background: white;
-  color: #226DC6;
+  color: #226DC6 !important;
 }
 
 @media screen and (max-width: 996px) {
