@@ -1,3 +1,4 @@
+/* Adjust hero background to be lighter or add contrast for the logo */
 .heroContent {
   display: flex;
   align-items: center;
@@ -30,11 +31,17 @@
   justify-content: center;
   align-items: center;
   max-width: 400px;
+  /* Add background for logo visibility */
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: var(--ifm-card-border-radius);
 }
 
 .heroImage img {
   max-width: 100%;
   height: auto;
+  /* Optional: add drop shadow for better contrast */
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
 }
 
 .buttons {
@@ -130,3 +137,4 @@
     order: -1;
   }
 }
+
