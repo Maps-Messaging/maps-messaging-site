@@ -51,6 +51,13 @@ const config: Config = {
     [
       'classic',
       {
+        gtag: {
+          trackingID: 'GTM-WW5J7QK7',
+          anonymizeIP: true,
+        },
+        googleTagManager: {
+          containerId: 'GTM-WW5J7QK7',
+        },
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
           // Remove or update editUrl if needed
