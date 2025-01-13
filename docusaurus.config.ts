@@ -1,10 +1,29 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import type { PostHogPluginOptions } from 'posthog-docusaurus';
+
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
+
+  plugins: [
+    [
+      'posthog-docusaurus',
+      {
+        apiKey: 'phc_Kmra2tvI1TBRZ9pNoMigbaYO716s9CJpRIRrq2WOsGK',
+        appUrl: 'https://eu.i.posthog.com', // usually https://app.posthog.com
+        enableInDevelopment: false,
+        // Optional: Add typed script parameters
+        scriptParams: {
+          'capture-pageview': true,
+          'capture-pageleave': true
+        }
+      } as PostHogPluginOptions,
+    ],
+  ],
+
   title: 'MAPS Messaging',
   tagline: 'Protocol-agnostic, AI-driven messaging solution for IoT',
   favicon: 'img/favicon/favicon.ico',
