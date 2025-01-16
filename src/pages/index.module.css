@@ -245,3 +245,34 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Add to your existing styles */
+.solutionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.solution {
+  padding: 2rem;
+  border-radius: 8px;
+  background: var(--ifm-card-background-color);
+  box-shadow: var(--ifm-global-shadow-lw);
+  transition: all 0.3s ease;
+}
+
+.solution:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--ifm-global-shadow-md);
+}
+
+.solution h3 {
+  color: var(--maps-light-blue);
+  margin-bottom: 1rem;
+}
+
+.solutions {
+  padding: 4rem 0;
+  background: var(--ifm-background-color);
+}

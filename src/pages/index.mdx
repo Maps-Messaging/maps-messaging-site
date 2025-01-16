@@ -6,8 +6,6 @@ hide_table_of_contents: true
 
 import styles from './index.module.css';
 
-
-
 <div className="hero hero--primary">
   <div className="container">
     <div className={styles.heroContent}>
@@ -16,19 +14,19 @@ import styles from './index.module.css';
         <p className="hero__subtitle">
           A high-performance, protocol-agnostic messaging solution for IoT and enterprise applications
         </p>
-       <div className={styles.buttons}>
-   <a className="button button--outline button--lg" href="/docs/intro">
-    Get Started ⚡️
-  </a>
-  <a 
-    className="button button--outline button--lg"
-    href="https://github.com/Maps-Messaging/maps_messaging"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    View on GitHub
-  </a>
-</div>
+        <div className={styles.buttons}>
+          <a className="button button--outline button--lg" href="/docs/intro">
+            Get Started ⚡️
+          </a>
+          <a 
+            className="button button--outline button--lg"
+            href="https://github.com/Maps-Messaging/maps_messaging"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View on GitHub
+          </a>
+        </div>
       </div>
       <div className={styles.heroImage}>
         <img src="/img/maps_logo.png" alt="MAPS Messaging Logo" />
@@ -88,6 +86,26 @@ import styles from './index.module.css';
   </div>
 </div>
 
+<div className={styles.solutions}>
+  <div className="container">
+    <h2>Industry Solutions</h2>
+    <div className={styles.solutionGrid}>
+      <div className={styles.solution}>
+        ### Healthcare
+        Ensure reliable, real-time medical device communication with our robust messaging infrastructure
+      </div>
+      <div className={styles.solution}>
+        ### Energy
+        Enable instant grid monitoring and control with high-performance message routing
+      </div>
+      <div className={styles.solution}>
+        ### Smart Cities
+        Power efficient urban infrastructure with scalable IoT communication
+      </div>
+    </div>
+  </div>
+</div>
+
 <div className={styles.cta}>
   <div className="container">
     ## Ready to Transform Your Messaging Infrastructure?
@@ -108,6 +126,3 @@ import styles from './index.module.css';
     </div>
   </div>
 </div>
-
-
-
