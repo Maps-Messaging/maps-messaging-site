@@ -30,7 +30,7 @@ const config: Config = {
 
     // Set the production url of your site here
   url: 'https://landing.mapsmessaging.io', // Update with your actual domain
-  baseUrl: '/mapsmessaging-site/',
+  baseUrl: '/maps-messaging-site/',
    // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Maps-Messaging', // Usually your GitHub org/user name
