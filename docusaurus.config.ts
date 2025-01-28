@@ -29,12 +29,12 @@ const config: Config = {
   favicon: 'img/favicon/favicon.ico',
 
     // Set the production url of your site here
-  url: 'https://landing.mapsmessaging.io', // Update with your actual domain
+  url: 'https://maps-messaging-site.github.io', // Update with your actual domain
   baseUrl: '/maps-messaging-site/',
    // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Maps-Messaging', // Usually your GitHub org/user name
-  projectName: 'maps-messaging-site', // Usually your repo name
+  projectName: 'maps-messaging-site.github.io', // Usually your repo name
   trailingSlash: false,
   deploymentBranch: 'gh-pages', 
 
