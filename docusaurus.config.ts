@@ -33,8 +33,10 @@ const config: Config = {
   baseUrl: '/',
    // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'maps-messaging', // Usually your GitHub org/user name
-  projectName: 'maps-messaging-site', // Usually your repo name
+  organizationName: 'Maps-Messaging', // Usually your GitHub org/user name
+  projectName: 'maps-messaging-site.github.io', // Usually your repo name
+  trailingSlash: false,
+  deploymentBranch: 'gh-pages', 
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

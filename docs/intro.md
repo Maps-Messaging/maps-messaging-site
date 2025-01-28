@@ -2,39 +2,72 @@
 sidebar_position: 1
 ---
 
-# Introduction to MAPS Messaging
+# Getting Started with MAPS Messaging
 
-Welcome to MAPS Messaging - a protocol-agnostic, AI-driven messaging solution designed for IoT devices and enterprise applications.
+Welcome to MAPS Messaging - the protocol and transport agnostic messaging middleware software that revolutionizes IoT by unleashing in-transit intelligence.
 
-## What is MAPS Messaging?
+## Quick Start
 
-MAPS Messaging is a sophisticated messaging platform that combines:
-- Multi-protocol support
-- AI/ML integration capabilities
-- Advanced routing and filtering
-- Enterprise-grade security
-- Direct hardware integration
+1. **Choose Your Edition**
+   - [Community Edition](editions/community) - Free, core functionality
+   - [Enterprise Edition](editions/enterprise) - Full features with support
+   - [Premium ML Edition](editions/premium) - Advanced ML capabilities
 
-## Key Features
+2. **System Requirements**
+   - JDK 13 or higher
+   - Supported platforms: Linux, Windows, macOS
+   - Docker support available
 
-### Protocol Agnostic
-- Support for MQTT, MQTT-SN, AMQP
-- Custom protocol adaptation capability
-- Seamless protocol translation
+3. **Installation**
 
-### AI Integration
-- In-transit ETL processing
-- ML-based data routing
-- K-Means clustering for anomaly detection
-- TensorFlow model inference
+```bash
+# Using Docker
+docker pull mapsmessaging/maps-messaging-server
 
-### Enterprise Security
-- SSL/TLS encryption
-- SASL authentication
-- Planned certifications: SOC2, ISO 27001, FIPS
+# Or download the latest release
+wget https://github.com/Maps-Messaging/maps_messaging/releases/latest/download/maps-messaging-server.jar
 
-## Getting Started
+```
 
-Choose your path to get started with MAPS Messaging:
-- [Quick Start Guide](/docs/getting-started/quick-start.md)
-- [Installation](/docs/getting-started/installation.md)
+# Basic Configuration
+
+```yaml
+server:
+  port: 1883
+  protocols:
+    - mqtt
+    - amqp
+```
+
+# First Connection
+
+```java
+// MQTT Example
+MqttClient client = new MqttClient("tcp://localhost:1883", "clientId");
+client.connect();
+```
+
+# Key Features
+
+   - Protocol Agnostic Support (MQTT, AMQP, MQTT-SN, CoAP, STOMP, Other)
+   - High Performance Message Routing
+   - Built-in Security (SSL/TLS, SASL)
+   - AI/ML Integration Ready
+
+
+# Next Steps
+
+   - [Explore Community Edition](editions/community) - Free, core functionality
+   - [View Enterprise Edition](editions/enterprise) - Full features with support
+   - [Discover Premium ML Capabilities](editions/premium) - Advanced ML capabilities
+   - Github Repository
+
+
+# Support
+
+   - [Community Forum](editions/community) - Free, core functionality
+   - [Github Issues](editions/enterprise) - Full features with support
+   - [Enterprise Support (Available with Enterprise Edition)](editions/premium) - Advanced ML capabilities
+
+
+
